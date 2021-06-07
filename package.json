@@ -29,7 +29,8 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
-    "@types/styled-components": "^5.1.9"
+    "@types/styled-components": "^5.1.9",
+    "react-native-dotenv": "^2.5.5"
   },
   "private": true
 }

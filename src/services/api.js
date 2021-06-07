@@ -1,17 +1,16 @@
 import axios from "axios";
+import { REACT_APP_BITLY_TOKEN } from "@env";
 
-// key 67b3e5ed3548e7f44738914a8295ee15beef536a
+// gerar uma key em bit.ly
 
-// base url: https://api-ssl.bitly.com/v4/
-
-export const key = "67b3e5ed3548e7f44738914a8295ee15beef536a";
+export const key = REACT_APP_BITLY_TOKEN;
 
 const api = axios.create({
-  baseURL: "https://api-ssl.bitly.com/v4",
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${key}`,
-  },
+    baseURL: "https://api-ssl.bitly.com/v4",
+    headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${key}`,
+    },
 });
 
 export default api;
